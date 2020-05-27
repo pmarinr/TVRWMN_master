@@ -33,7 +33,7 @@ public class HideByLocking : MonoBehaviour
         {
             Debug.LogWarning(transform.name + "detect " + interactionRayHit.transform.name, interactionRayHit.transform.gameObject);
             Debug.DrawLine(transform.position, fowardDirection * interactionRayLength, Color.green);
-            Ghost ghostScript = interactionRayHit.transform.gameObject.GetComponent<Ghost>();
+            Shadow ghostScript = interactionRayHit.transform.gameObject.GetComponent<Shadow>();
             if (ghostScript)
             {
                 ghostScript.Ocultar();

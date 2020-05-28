@@ -46,6 +46,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8470536043722252299, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.669
+      objectReference: {fileID: 0}
+    - target: {fileID: -8470536043722252299, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8470536043722252299, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.648
+      objectReference: {fileID: 0}
     - target: {fileID: -8129629725256482196, guid: 48882c062042143448db0f02dd6e3be5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -179,7 +194,7 @@ PrefabInstance:
     - target: {fileID: -4037749335236045176, guid: 48882c062042143448db0f02dd6e3be5,
         type: 3}
       propertyPath: m_CastShadows
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3502138526019533515, guid: 48882c062042143448db0f02dd6e3be5,
         type: 3}
@@ -249,7 +264,17 @@ PrefabInstance:
     - target: {fileID: 2049023956115260585, guid: 48882c062042143448db0f02dd6e3be5,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532789349479957847, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.193
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532789349479957847, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.242
       objectReference: {fileID: 0}
     - target: {fileID: 3419790630249520698, guid: 48882c062042143448db0f02dd6e3be5,
         type: 3}
@@ -295,6 +320,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375872409593733476, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375872409593733476, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.253
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375872409593733476, guid: 48882c062042143448db0f02dd6e3be5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.648
       objectReference: {fileID: 0}
     - target: {fileID: 8145887928565479115, guid: 48882c062042143448db0f02dd6e3be5,
         type: 3}

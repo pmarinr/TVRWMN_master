@@ -3,7 +3,17 @@ guid: 35b5b1fbca4f79d42a815e054e6c85a7
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BotaellaVerde
+    second: {fileID: 2100000, guid: 7252ab862559fec48b7b6f198bc58ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BotellaBlanca
+    second: {fileID: 2100000, guid: 3da9b7a79524c5340b66d74a79ae7f83, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

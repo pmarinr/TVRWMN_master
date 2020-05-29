@@ -3,7 +3,22 @@ guid: 6b10206406d002d4cb73833b7270424c
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera2
+    second: {fileID: 2100000, guid: a23b02d361782484f8786dc76d029bac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera3
+    second: {fileID: 2100000, guid: ebbb29d2be01b7e42b83da6d99397c0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TelaRoja
+    second: {fileID: 2100000, guid: bfcc8e9254ac36149bc47f478ebeb25b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

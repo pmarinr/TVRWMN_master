@@ -3,7 +3,32 @@ guid: cc5da7761d5bfbc468579ff0274f1652
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BotaellaVerde
+    second: {fileID: 2100000, guid: 7252ab862559fec48b7b6f198bc58ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Libro1
+    second: {fileID: 2100000, guid: d330ff9fd482d194ba6410b8bf7ec219, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Libro3
+    second: {fileID: 2100000, guid: 9d4b37ac91f0cd5409e19f95f3735ba1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Libro5
+    second: {fileID: 2100000, guid: cb54fbc1dad3dff4d9fb973569bd8204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Libro6
+    second: {fileID: 2100000, guid: 98bb159d9f4aa954180cb822ab27d2cb, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

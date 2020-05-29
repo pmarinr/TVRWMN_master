@@ -3,7 +3,12 @@ guid: 91a472e1f9e0a7c4ea4cc85d3db01faa
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RellenoPared
+    second: {fileID: 2100000, guid: 321aef52137784f4b9a0ad569eec1082, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

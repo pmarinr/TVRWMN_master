@@ -3,7 +3,12 @@ guid: 709f6660b84eced4ebc7c6c44f53b393
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moldura
+    second: {fileID: 2100000, guid: ae8edc9e20cca4a4c844a0734792173b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

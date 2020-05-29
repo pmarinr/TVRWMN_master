@@ -3,7 +3,32 @@ guid: e6e73e7d2eda3ce4993df121be3ef4bb
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera
+    second: {fileID: 2100000, guid: aff8eda34b1736b4c9c146bcdcc31e92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera2
+    second: {fileID: 2100000, guid: a23b02d361782484f8786dc76d029bac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaderaOscura
+    second: {fileID: 2100000, guid: 9ec0fb5708382e54c8c2c3a142674d21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaderaRoble
+    second: {fileID: 2100000, guid: 6055e2a78eca902488b52d2e45e55bba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moldura
+    second: {fileID: 2100000, guid: ae8edc9e20cca4a4c844a0734792173b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

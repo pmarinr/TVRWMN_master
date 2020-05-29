@@ -3,7 +3,12 @@ guid: 0add832f88e730d49b81f0666c9cae7d
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BotaellaVerde
+    second: {fileID: 2100000, guid: 7252ab862559fec48b7b6f198bc58ba0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

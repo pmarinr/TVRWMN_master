@@ -103,7 +103,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Humedad
-    second: {fileID: 2100000, guid: 1fba98c06cf4ccd4eb323af7effd665e, type: 2}
+    second: {fileID: 2100000, guid: 47bc717e26208e6498f291cb04004a79, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -163,7 +163,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MaderaOscura
-    second: {fileID: 2100000, guid: cabbcc6e2b1c30846a62f455350f0e27, type: 2}
+    second: {fileID: 2100000, guid: 9ec0fb5708382e54c8c2c3a142674d21, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -173,7 +173,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MaderaRoble
-    second: {fileID: 2100000, guid: d720e2b6f3417ce429e22f02a19c98a8, type: 2}
+    second: {fileID: 2100000, guid: 6055e2a78eca902488b52d2e45e55bba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -184,6 +184,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: MarcoVentana
     second: {fileID: 2100000, guid: cdb4c74adc3abf24b8ad24107fd8f67f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: dc14f83ffa570f04882d59d62e640c20, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -212,6 +217,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: b410a821a86451246b3d813a01c6acfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: MetalRojo
     second: {fileID: 2100000, guid: 615fc130cdfdfa54cba3f7c817f12257, type: 2}
   - first:
@@ -223,7 +233,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Moldura
-    second: {fileID: 2100000, guid: 162684c1419f5a54daa2f8d42424e9b9, type: 2}
+    second: {fileID: 2100000, guid: ae8edc9e20cca4a4c844a0734792173b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -233,7 +243,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Papel
-    second: {fileID: 2100000, guid: b36f7a9f2f0c91e41928cb1123e5b893, type: 2}
+    second: {fileID: 2100000, guid: 97895a686f3af2545b2c0ff567d294c7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

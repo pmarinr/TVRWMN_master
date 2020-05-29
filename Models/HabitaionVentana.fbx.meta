@@ -8,79 +8,79 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Columna
-    second: {fileID: 2100000, guid: 89a1c0fc5b2b4444587b63ceb62c5424, type: 2}
+    second: {fileID: 2100000, guid: 9985e6c517d04864a8b6e684109a48aa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cristal
-    second: {fileID: 2100000, guid: 877d5bdb5e98f584a98df28f7e9cd1ee, type: 2}
+    second: {fileID: 2100000, guid: 236f3cced027de848b708615f078d005, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hierro
-    second: {fileID: 2100000, guid: e365c1f776bb69940b1018899c8a6101, type: 2}
+    second: {fileID: 2100000, guid: 4ff3f9ecc6c409248925b69078b68929, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Humedad
-    second: {fileID: 2100000, guid: 6db410a2d9d353841afd8cfbd25f80ee, type: 2}
+    second: {fileID: 2100000, guid: 47bc717e26208e6498f291cb04004a79, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Madera
-    second: {fileID: 2100000, guid: dfb601bb0bb52c64592f14531d484313, type: 2}
+    second: {fileID: 2100000, guid: aff8eda34b1736b4c9c146bcdcc31e92, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Madera2
-    second: {fileID: 2100000, guid: f5b3633e7469d3d438638f61840eb02a, type: 2}
+    second: {fileID: 2100000, guid: a23b02d361782484f8786dc76d029bac, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MaderaClara
-    second: {fileID: 2100000, guid: cb9a460269d529648b9f74bf6b4b9573, type: 2}
+    second: {fileID: 2100000, guid: be7eb6211d0b89e4dad8b67d35b1dcf3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MaderaGris
-    second: {fileID: 2100000, guid: def2776bb0895b24fb4409e836749e71, type: 2}
+    second: {fileID: 2100000, guid: fa25f80ab9c528c4a84e0b5ad4fc873a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MaderaOscura
-    second: {fileID: 2100000, guid: 73d51b35976d1aa4190fa78e3830f2d2, type: 2}
+    second: {fileID: 2100000, guid: 9ec0fb5708382e54c8c2c3a142674d21, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MaderaRoble
-    second: {fileID: 2100000, guid: 4e71f1a6e8e01074698d383deaa20b7a, type: 2}
+    second: {fileID: 2100000, guid: 6055e2a78eca902488b52d2e45e55bba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MarcoVentana
-    second: {fileID: 2100000, guid: 6662fbbe4ca35db49b06caa682d46b00, type: 2}
+    second: {fileID: 2100000, guid: cdb4c74adc3abf24b8ad24107fd8f67f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Moldura
-    second: {fileID: 2100000, guid: bebd363b103beb947bff3c00681ebfab, type: 2}
+    second: {fileID: 2100000, guid: ae8edc9e20cca4a4c844a0734792173b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Oro
-    second: {fileID: 2100000, guid: bac4e6cc554cdc04b95d8cbb80f87feb, type: 2}
+    second: {fileID: 2100000, guid: 8f63718266af9fb45b6d8b6d989038b8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Pared
-    second: {fileID: 2100000, guid: 5f9d3767ece905e4092206041a0b91ce, type: 2}
+    second: {fileID: 2100000, guid: 0a02f3a7d47d4b14cbf94cacc65d462c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TelaRoja
-    second: {fileID: 2100000, guid: 89f9fe1dfa0e0fe4497d0fb7206f1ed1, type: 2}
+    second: {fileID: 2100000, guid: bfcc8e9254ac36149bc47f478ebeb25b, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1

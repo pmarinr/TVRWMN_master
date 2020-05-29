@@ -3,7 +3,22 @@ guid: 375dd77af94fbf64cbeaa1a445e00127
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BotellaBlanca
+    second: {fileID: 2100000, guid: 3da9b7a79524c5340b66d74a79ae7f83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BotellaRojo
+    second: {fileID: 2100000, guid: 0617eb0ef5d87084e9913ca3d6bbc97e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tapon
+    second: {fileID: 2100000, guid: 60176fc93de96fd4fbcdc22ceb6d559b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -3,9 +3,89 @@ guid: 48882c062042143448db0f02dd6e3be5
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bombilla
+    second: {fileID: 2100000, guid: eb37d01c97419044b8052845be7634c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bronce
+    second: {fileID: 2100000, guid: c76d0bdbd81ee0b40a7ffafb937d9723, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cable
+    second: {fileID: 2100000, guid: 5d62253c20141aa498a4eb72abf787b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceramica1
+    second: {fileID: 2100000, guid: 84fef3e02cef50246a93f38201c15712, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera
+    second: {fileID: 2100000, guid: aff8eda34b1736b4c9c146bcdcc31e92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera2
+    second: {fileID: 2100000, guid: a23b02d361782484f8786dc76d029bac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaderaEncina
+    second: {fileID: 2100000, guid: e48c1c67326eb1b49b672b446711071f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaderaPino
+    second: {fileID: 2100000, guid: 675f0d6343176ee488b9b334433aa36c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaderaRoble
+    second: {fileID: 2100000, guid: 6055e2a78eca902488b52d2e45e55bba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalRojo
+    second: {fileID: 2100000, guid: 615fc130cdfdfa54cba3f7c817f12257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moldura
+    second: {fileID: 2100000, guid: ae8edc9e20cca4a4c844a0734792173b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oro
+    second: {fileID: 2100000, guid: 8f63718266af9fb45b6d8b6d989038b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PapelPared
+    second: {fileID: 2100000, guid: 42816c8864097d94e82e82464409d1ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pared
+    second: {fileID: 2100000, guid: 0a02f3a7d47d4b14cbf94cacc65d462c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlasticoRojo
+    second: {fileID: 2100000, guid: af2ce2daa0a40444183ebd4c3852975e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RellenoPared
+    second: {fileID: 2100000, guid: 321aef52137784f4b9a0ad569eec1082, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1

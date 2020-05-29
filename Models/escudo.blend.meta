@@ -7,8 +7,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Acero
+    second: {fileID: 2100000, guid: da82bbc70318cd34c881d6776b7711e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EscudoBase
+    second: {fileID: 2100000, guid: d99cd6056dae7c543b87f6a0d3bdbe37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EscudoCuero
+    second: {fileID: 2100000, guid: 19232b630c28a7440a0b54bdca7f2fcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EscudoDetalle
+    second: {fileID: 2100000, guid: 61ccb7012f4d550498f65ff7e5596e65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Escudofondo
+    second: {fileID: 2100000, guid: 1e55f3ad37978bc42954cfa013e047a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madera
+    second: {fileID: 2100000, guid: aff8eda34b1736b4c9c146bcdcc31e92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mango
+    second: {fileID: 2100000, guid: 31a94422af39ff94bab1a4744345cc0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: dc14f83ffa570f04882d59d62e640c20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: b410a821a86451246b3d813a01c6acfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rubi
+    second: {fileID: 2100000, guid: 1f7fe6d34e0306041acd41e7ff2fc4ae, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

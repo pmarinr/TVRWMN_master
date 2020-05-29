@@ -3,7 +3,27 @@ guid: a030deed9b02cee45ae79bbd7222181d
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bombilla
+    second: {fileID: 2100000, guid: eb37d01c97419044b8052845be7634c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cable
+    second: {fileID: 2100000, guid: 5d62253c20141aa498a4eb72abf787b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalRojo
+    second: {fileID: 2100000, guid: 615fc130cdfdfa54cba3f7c817f12257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlasticoRojo
+    second: {fileID: 2100000, guid: af2ce2daa0a40444183ebd4c3852975e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

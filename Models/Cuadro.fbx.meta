@@ -3,7 +3,17 @@ guid: bcfe140c395356f45adc94dfb0616ea6
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cuadro
+    second: {fileID: 2100000, guid: 89e3b9eae16181f49bba7256cf656ffe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marco
+    second: {fileID: 2100000, guid: 72d5fe7f319aac04da344b0b11e7f95b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

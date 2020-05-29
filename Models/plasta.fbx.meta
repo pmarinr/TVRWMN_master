@@ -3,7 +3,12 @@ guid: d25ac6212274c7d408a812b1dc7aea6d
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mocos
+    second: {fileID: 2100000, guid: 5a44725f858f1424dbba391243e2a858, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

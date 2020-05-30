@@ -36,6 +36,9 @@ namespace TVRWMN
 
 		string gameVersion = "1";
 
+		private TypedLobby customLobby = new TypedLobby("TVRWMN", LobbyType.Default);
+
+
 		void Awake()
 		{
 			PhotonNetwork.AutomaticallySyncScene = true;
@@ -93,9 +96,14 @@ namespace TVRWMN
 				
 				PhotonNetwork.LocalPlayer.NickName = playerNameField.text; 
 				Debug.Log("PhotonNetwork.IsConnected! | Trying to Create/Join Room " + roomNameField.text);
-				RoomOptions roomOptions = new RoomOptions(); 
-				TypedLobby typedLobby = new TypedLobby(roomNameField.text, LobbyType.Default); 
-				PhotonNetwork.JoinOrCreateRoom(roomNameField.text, roomOptions, typedLobby); 
+				RoomOptions roomOptions = new RoomOptions();
+				roomOptions.MaxPlayers = 2;
+				
+				TypedLobby typedLobby = new TypedLobby("TVRWMN", LobbyType.Default); //3
+				PhotonNetwork.JoinOrCreateRoom(roomNameField.text, roomOptions, typedLobby); //4
+
+				//PhotonNetwork.CreateRoom(roomNameField.text, roomOptions, customLobby); 
+				//PhotonNetwork.CreateRoom(roomNameField.text, roomOptions);
 			}
 			else
 			{
@@ -139,7 +147,7 @@ namespace TVRWMN
 				Debug.Log("PUN Basics Tutorial/Launcher: OnConnectedToMaster() was called by PUN. Now this client is connected and could join a room.\n Calling: PhotonNetwork.JoinRandomRoom(); Operation will fail if no room found");
 
 				// #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
-				PhotonNetwork.JoinRandomRoom();
+				//PhotonNetwork.JoinRandomRoom();
 			}
 		}
 
@@ -155,7 +163,8 @@ namespace TVRWMN
 			Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
 
 			// #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-			PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = this.maxPlayersPerRoom });
+			//PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = this.maxPlayersPerRoom });
+			//PhotonNetwork.CreateRoom()
 		}
 
 

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using HutongGames.PlayMaker.Actions;
 
 public class CameraMove : MonoBehaviour
 {

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
-
+using UnityEngine.SceneManagement;
 
 namespace TVRWMN
 {
@@ -14,19 +14,20 @@ namespace TVRWMN
 		private GameObject buttonConect;
 		[SerializeField]
 		private GameObject buttonCreateRoom;
+		[SerializeField]
+		private GameObject canvasNetwork;
 
 		[SerializeField]
 		private Text feedbackText;
 
 		[SerializeField]
-		private byte maxPlayersPerRoom = 4;
+		private byte maxPlayersPerRoom = 2;
 
 		[SerializeField]
 		private GameObject loaderAnime;
 
 		[Space(10)]
 		[Header("Custom Variables")]
-		public InputField playerNameField;
 		public InputField roomNameField;
 
 
@@ -41,7 +42,7 @@ namespace TVRWMN
 
 		void Awake()
 		{
-			PhotonNetwork.AutomaticallySyncScene = true;
+			PhotonNetwork.AutomaticallySyncScene = false;
 		}
 
 		private void Start()
@@ -94,16 +95,14 @@ namespace TVRWMN
 			{
 				LogFeedback("Creating Room...");
 				
-				PhotonNetwork.LocalPlayer.NickName = playerNameField.text; 
-				Debug.Log("PhotonNetwork.IsConnected! | Trying to Create/Join Room " + roomNameField.text);
+				PhotonNetwork.LocalPlayer.NickName = "PC"; 
+				Debug.Log("PhotonNetwork.IsConnected! | Trying to Create/Join Room " + "666");
 				RoomOptions roomOptions = new RoomOptions();
 				roomOptions.MaxPlayers = 2;
 				
 				TypedLobby typedLobby = new TypedLobby("TVRWMN", LobbyType.Default); //3
-				PhotonNetwork.JoinOrCreateRoom(roomNameField.text, roomOptions, typedLobby); //4
+				PhotonNetwork.JoinOrCreateRoom("666", roomOptions, typedLobby); //4
 
-				//PhotonNetwork.CreateRoom(roomNameField.text, roomOptions, customLobby); 
-				//PhotonNetwork.CreateRoom(roomNameField.text, roomOptions);
 			}
 			else
 			{
@@ -133,42 +132,7 @@ namespace TVRWMN
 		// you can find PUN's callbacks in the class MonoBehaviourPunCallbacks
 
 
-		/// <summary>
-		/// Called after the connection to the master is established and authenticated
-		/// </summary>
-		public override void OnConnectedToMaster()
-		{
-			// we don't want to do anything if we are not attempting to join a room. 
-			// this case where isConnecting is false is typically when you lost or quit the game, when this level is loaded, OnConnectedToMaster will be called, in that case
-			// we don't want to do anything.
-			if (isConnecting)
-			{
-				LogFeedback("OnConnectedToMaster: Next -> try to Join Random Room");
-				Debug.Log("PUN Basics Tutorial/Launcher: OnConnectedToMaster() was called by PUN. Now this client is connected and could join a room.\n Calling: PhotonNetwork.JoinRandomRoom(); Operation will fail if no room found");
-
-				// #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
-				//PhotonNetwork.JoinRandomRoom();
-			}
-		}
-
-		/// <summary>
-		/// Called when a JoinRandom() call failed. The parameter provides ErrorCode and message.
-		/// </summary>
-		/// <remarks>
-		/// Most likely all rooms are full or no rooms are available. <br/>
-		/// </remarks>
-		public override void OnJoinRandomFailed(short returnCode, string message)
-		{
-			LogFeedback("<Color=Red>OnJoinRandomFailed</Color>: Next -> Create a new Room");
-			Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
-
-			// #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-			//PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = this.maxPlayersPerRoom });
-			//PhotonNetwork.CreateRoom()
-		}
-
-
-		/// <summary>
+				/// <summary>
 		/// Called after disconnecting from the Photon server.
 		/// </summary>
 		public override void OnDisconnected(DisconnectCause cause)
@@ -219,14 +183,19 @@ namespace TVRWMN
 				Debug.Log("We load the 'Room for 1' ");
 				
 				LogFeedback("Esperando al investigador...");
-				
-				// #Critical
-				// Load the Room Level. 
-				//PhotonNetwork.LoadLevel("PC");
 
 			}
+			
+			
 		}
 
+		public override void OnPlayerEnteredRoom(Player newPlayer)
+		{
 
+			LogFeedback("Ya estamos todos!!");
+			canvasNetwork.SetActive(false);
+			SceneManager.LoadScene("PC", LoadSceneMode.Additive);
+
+		}
 	}
 }

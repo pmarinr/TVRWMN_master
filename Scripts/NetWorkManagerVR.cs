@@ -31,6 +31,12 @@ namespace TVRWMN
 		private GameObject head;
 
 		[SerializeField]
+		private GameObject handR;
+
+		[SerializeField]
+		private GameObject handL;
+
+		[SerializeField]
 		bool isConnecting;
 
 		string gameVersion = "1";
@@ -115,6 +121,12 @@ namespace TVRWMN
 			SceneManager.LoadScene("Escenario1", LoadSceneMode.Additive);
 			GameObject cabezaOnline = PhotonNetwork.Instantiate("Cabeza", head.transform.position, head.transform.rotation, 0);
 			cabezaOnline.transform.parent = head.transform;
+
+			GameObject ManoDOnline = PhotonNetwork.Instantiate("Linterna", handR.transform.position, handR.transform.rotation, 0);
+			cabezaOnline.transform.parent = handR.transform;
+
+			GameObject ManoIOnline = PhotonNetwork.Instantiate("Mano", handL.transform.position, handL.transform.rotation, 0);
+			cabezaOnline.transform.parent = handL.transform;
 
 		}
 

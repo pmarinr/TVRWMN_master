@@ -126,7 +126,7 @@ public class NetWorkManagerVR : MonoBehaviourPunCallbacks
 	{
 		LogFeedback("<Color=Green>Sala encontrada:</Color> with " + PhotonNetwork.CurrentRoom.Name );
 		LogFeedback("Partida encontrada");
-		PhotonNetwork.LoadLevel("PC");
+		//PhotonNetwork.LoadLevel(1);
 
 		
 	}
@@ -204,7 +204,7 @@ public class NetWorkManagerVR : MonoBehaviourPunCallbacks
 
 			TypedLobby typedLobby = new TypedLobby("TVRWMN", LobbyType.Default); //3
 			PhotonNetwork.JoinOrCreateRoom("666", roomOptions, typedLobby); //4
-
+			
 			//PhotonNetwork.CreateRoom(roomNameField.text, roomOptions, customLobby); 
 			//PhotonNetwork.CreateRoom(roomNameField.text, roomOptions);
 		}

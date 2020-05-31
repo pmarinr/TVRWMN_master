@@ -87,10 +87,15 @@ namespace TVRWMN
 			LogFeedback("Conectado al mas alla");
 			loaderAnime.SetActive(false);
 			salas.SetActive(true);
-			LogFeedback("Elija un crimen para investigar...");
 			Debug.Log("Conectado al servidor... Intentamos conectar con una sala");
-
+			PhotonNetwork.JoinLobby();
 			
+		}
+
+		public void OnJoinedLobbyCallBack()
+		{
+			LogFeedback("Elija un crimen para investigar...");
+			Debug.Log("Entrando en el lobby");
 		}
 
 		public override void OnDisconnected(DisconnectCause cause)
@@ -121,13 +126,13 @@ namespace TVRWMN
 			SceneManager.LoadScene("Escenario1", LoadSceneMode.Additive);
 			GameObject cabezaOnline = PhotonNetwork.Instantiate("Cabeza", head.transform.position, head.transform.rotation, 0);
 			cabezaOnline.transform.parent = head.transform;
-
+			
 			GameObject ManoDOnline = PhotonNetwork.Instantiate("Linterna", handR.transform.position, handR.transform.rotation, 0);
-			cabezaOnline.transform.parent = handR.transform;
-
+			ManoDOnline.transform.parent = handR.transform;
+			
 			GameObject ManoIOnline = PhotonNetwork.Instantiate("Mano", handL.transform.position, handL.transform.rotation, 0);
-			cabezaOnline.transform.parent = handL.transform;
-
+			ManoIOnline.transform.parent = handL.transform;
+			
 		}
 
 		public override void OnJoinRandomFailed(short returnCode, string message)

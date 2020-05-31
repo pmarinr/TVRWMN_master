@@ -1,19 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!82 &6869505714621895232
+--- !u!82 &6869505715936700896
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6869505716107047197}
+  m_GameObject: {fileID: 2264663195634919141}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7141886833504477029, guid: 7655743ef4b67864fb6a2757d698ced4,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9fa136fdcb75aaf49897cb42c140fffc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -160,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6869505715564805850}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.441, y: 0.101, z: 2.137}
+  m_LocalPosition: {x: 1.786, y: 0.141, z: 2.137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6869505715420970401}
@@ -224,7 +223,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6869505715564805850}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.395, y: 2.5000005, z: 0.20000005}
@@ -273,7 +272,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9fa136fdcb75aaf49897cb42c140fffc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -357,19 +356,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &6869505715936700896
+--- !u!82 &6869505714621895232
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2264663195634919141}
+  m_GameObject: {fileID: 6869505716107047197}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7141886833504477029, guid: 7655743ef4b67864fb6a2757d698ced4,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 9fa136fdcb75aaf49897cb42c140fffc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -473,17 +473,17 @@ PrefabInstance:
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.893
+      value: 3.178
       objectReference: {fileID: 0}
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.101
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.377
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
@@ -528,7 +528,7 @@ PrefabInstance:
     - target: {fileID: 4627677454497887231, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4627677454497887231, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
@@ -566,6 +566,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6869505715420970401}
     m_Modifications:
+    - target: {fileID: 1764845602434413672, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 8849328813841117, guid: 7655743ef4b67864fb6a2757d698ced4,
+        type: 2}
+    - target: {fileID: 1764845602434413672, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
+        type: 3}
+      propertyPath: MinDistance
+      value: 2.26
+      objectReference: {fileID: 0}
     - target: {fileID: 1764845603477308443, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
         type: 3}
       propertyPath: m_Name
@@ -579,7 +590,7 @@ PrefabInstance:
     - target: {fileID: 1764845603477308444, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.554
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 1764845603477308444, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
         type: 3}
@@ -626,6 +637,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1764845603477308445, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
+        type: 3}
+      propertyPath: ancho
+      value: 5.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764845603477308445, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
+        type: 3}
+      propertyPath: largo
+      value: 5.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764845603477308445, guid: 63a8b42616ae8da41a3c8e721f6f6ba0,
+        type: 3}
+      propertyPath: alto
+      value: 3.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63a8b42616ae8da41a3c8e721f6f6ba0, type: 3}
 --- !u!4 &6869505715571072922 stripped
@@ -654,7 +680,7 @@ PrefabInstance:
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.188
+      value: -3.221
       objectReference: {fileID: 0}
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
@@ -664,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.893
+      value: -0.436
       objectReference: {fileID: 0}
     - target: {fileID: 4627677454497887229, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
@@ -709,7 +735,7 @@ PrefabInstance:
     - target: {fileID: 4627677454497887231, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4627677454497887231, guid: 6a7ceceabb9eb6e4b9b9ae44adb8e33f,
         type: 3}

@@ -195,6 +195,7 @@ namespace TVRWMN
 			LogFeedback("Ya estamos todos!!");
 			canvasNetwork.SetActive(false);
 			SceneManager.LoadScene("PC", LoadSceneMode.Additive);
+			//PhotonNetwork.InstantiateSceneObject("Cabeza", new Vector3(0, 0, 0), Quaternion.identity, 0);
 
 		}
 	}

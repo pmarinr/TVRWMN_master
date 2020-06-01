@@ -130,6 +130,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58037855}
     m_Modifications:
+    - target: {fileID: 122156727720225164, guid: 794d48f770d3c5d4d931d94cfce575d3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b36f7a9f2f0c91e41928cb1123e5b893, type: 2}
     - target: {fileID: 1841175003939347792, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Name
@@ -198,19 +203,25 @@ PrefabInstance:
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Text
-      value: "<b>Sala</b> Voldemor\n\n<b>Master:</b> Maria\n\n<b>Hora</b> 11:28\n\n<b>Descripci\xF3n</b>.
-        Escenario mansi\xF3n encantada.\n"
+      value: "<b>Sala</b> Voldemor\n\n<b>Estado:</b> Abierta\n\n<b>Descripci\xF3n</b>\nMansi\xF3n
+        encantada.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4fc61002fde363345ad10baf2d1e32a4,
+        type: 3}
     - target: {fileID: 5290199637814653829, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_UseGravity
@@ -252,7 +263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58037854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.653, y: 0.96, z: -2.108}
+  m_LocalPosition: {x: -0.5567, y: 0.96, z: -2.108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1811926126}
@@ -894,7 +905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &357305620
 Transform:
   m_ObjectHideFlags: 0
@@ -1450,6 +1461,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58037855}
     m_Modifications:
+    - target: {fileID: 122156727720225164, guid: 794d48f770d3c5d4d931d94cfce575d3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b36f7a9f2f0c91e41928cb1123e5b893, type: 2}
     - target: {fileID: 1841175003939347792, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Name
@@ -1518,19 +1534,25 @@ PrefabInstance:
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Text
-      value: "<b>Sala</b> 666\n\n<b>Master:</b> Pedro\n\n<b>Hora</b> 11:21\n\n<b>Descripci\xF3n</b>.
-        Escenario Mansi\xF3n encantada.\n"
+      value: "<b>Sala</b> 666\n\n<b>Esador:</b> Abierta\n\n<b>Descripci\xF3n</b>\nMansi\xF3n
+        encantada.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4fc61002fde363345ad10baf2d1e32a4,
+        type: 3}
     - target: {fileID: 5290199637814653829, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_UseGravity
@@ -1548,6 +1570,84 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794d48f770d3c5d4d931d94cfce575d3, type: 3}
+--- !u!1 &728754766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728754767}
+  - component: {fileID: 728754769}
+  - component: {fileID: 728754768}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &728754767
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728754766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1254804659}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0}
+  m_SizeDelta: {x: 0.000015258789, y: 0.0000038146973}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &728754768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728754766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 602ae23d4bd8a45428f26ce8cd0c130f, type: 3}
+    m_FontSize: 17
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Ponga aqu\xED el caso a investigar\n"
+--- !u!222 &728754769
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728754766}
+  m_CullTransparentMesh: 0
 --- !u!1 &847094006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1883,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58037855}
     m_Modifications:
+    - target: {fileID: 122156727720225164, guid: 794d48f770d3c5d4d931d94cfce575d3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b36f7a9f2f0c91e41928cb1123e5b893, type: 2}
     - target: {fileID: 1841175003939347792, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Name
@@ -1851,19 +1956,25 @@ PrefabInstance:
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Text
-      value: "<b>Sala</b> 127\n\n<b>Master:</b> Julian\n\n<b>Hora</b> 11:26\n\n<b>Descripci\xF3n</b>.
-        Escenario tren fantasma\n"
+      value: "<b>Sala</b> 127\n\n<b>Estado:</b> Cerrada\n\n<b>Descripci\xF3n</b>\nHospital
+        abandonado\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 4fc61002fde363345ad10baf2d1e32a4,
+        type: 3}
     - target: {fileID: 5290199637814653829, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_UseGravity
@@ -2074,6 +2185,105 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ccd9cb2b961ec43b76b8a630b8de54, type: 3}
+--- !u!1 &1254804658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254804659}
+  - component: {fileID: 1254804662}
+  - component: {fileID: 1254804661}
+  - component: {fileID: 1254804660}
+  m_Layer: 5
+  m_Name: Canvas (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1254804659
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254804658}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: -0.06165}
+  m_LocalScale: {x: 0.0010000003, y: 0.0010000003, z: 1}
+  m_Children:
+  - {fileID: 728754767}
+  m_Father: {fileID: 1859458690}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.6946, y: 0.7774}
+  m_SizeDelta: {x: 158.56314, y: 232.84644}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1254804660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254804658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1254804661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254804658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 2
+--- !u!223 &1254804662
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254804658}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1274387949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2109763118
 Transform:
   m_ObjectHideFlags: 0

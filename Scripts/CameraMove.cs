@@ -7,6 +7,7 @@ public class CameraMove : MonoBehaviour
 {
     public Transform[] PositionList;
     public Transform CameraMapPos;
+    public Transform CameraOuijaPos;
     public int pos = 0;
     Camera cam;
    
@@ -56,7 +57,7 @@ public class CameraMove : MonoBehaviour
     public void CameraOuija()
     {
         cam.orthographic = false;
-        ChangePos(PositionList[0]);
+        ChangePos(CameraOuijaPos);
        
     }
 

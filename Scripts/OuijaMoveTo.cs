@@ -1,24 +1,24 @@
 ﻿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting;
 using UnityEngine;
 
 public class OuijaMoveTo : MonoBehaviour
 {
-    public Transform[] path;
+  
     AudioSource audioSource;
+
+    private Vector3 destino;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        StartCoroutine(MoveToRoute(path));
+        GameEvents.current.moveToOuija += MoveTo;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
     public void MoveTo(Vector3 pos)
     {
@@ -28,17 +28,4 @@ public class OuijaMoveTo : MonoBehaviour
         audioSource.Play();
     }
 
-    IEnumerator MoveToRoute(Transform[] route)
-    {
-        yield return new WaitForSeconds(3f);
-        foreach (Transform destino in route)
-        {
-            MoveTo(destino.position);
-            
-            yield return new WaitForSeconds(3f);
-
-        }
-        
-
-    }
 }

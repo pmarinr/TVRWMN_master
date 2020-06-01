@@ -67,34 +67,34 @@ public class GameEvents : MonoBehaviour
     public void EncenderLuzRPC(string nombre)
     {
         Debug.Log("Enviando evento luces a todos los conectados");
-        EncenderLuz(nombre);
+        //EncenderLuz(nombre);
         PhotonView photonView = PhotonView.Get(this);
-        photonView.RPC("EncenderLuz", RpcTarget.Others, nombre);
+        photonView.RPC("EncenderLuz", RpcTarget.All, nombre);
     }
 
 
     public void ActivarOuijaRPC(bool activado)
     {
         Debug.Log("Activando Ouija");
-        SetOuija(activado);
+        //SetOuija(activado);
         PhotonView photonView = PhotonView.Get(this);
-        photonView.RPC("SetOuija", RpcTarget.Others, activado);
+        photonView.RPC("SetOuija", RpcTarget.All, activado);
     }
 
     public void MurcielagosRPC()
     {
         Debug.Log("Activando Murtcielagos");
-        ActivaMurcielagos();
+        //ActivaMurcielagos();
         PhotonView photonView = PhotonView.Get(this);
-        photonView.RPC("ActivaMurcielagos", RpcTarget.Others);
+        photonView.RPC("ActivaMurcielagos", RpcTarget.All);
     }
 
     public void CthulhuRPC()
     {
         Debug.Log("Activando Cthulhu");
-        ActivaCthulhu();
+        //ActivaCthulhu();
         PhotonView photonView = PhotonView.Get(this);
-        photonView.RPC("ActivaCthulhu", RpcTarget.Others);
+        photonView.RPC("ActivaCthulhu", RpcTarget.All);
     }
 
 
@@ -109,8 +109,8 @@ public class GameEvents : MonoBehaviour
                 Debug.Log("Destino en " + hit.transform.name);
                 Vector3 destino = hit.point;
                 PhotonView photonView = PhotonView.Get(this);
-                MueveOuija(destino);
-                photonView.RPC("MueveOuija", RpcTarget.Others, destino);
+                //MueveOuija(destino);
+                photonView.RPC("MueveOuija", RpcTarget.All, destino);
             }
         }
     }

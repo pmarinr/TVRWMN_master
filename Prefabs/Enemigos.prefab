@@ -125,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671255389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.439, y: 1.103, z: -1.915}
+  m_LocalPosition: {x: -1.546, y: 1.15, z: -1.578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1865882006435881239}
@@ -143,13 +143,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8018868, g: 0.73389435, b: 0.5484603, a: 1}
-  m_Intensity: 2
-  m_Range: 2.52
+  m_Intensity: 9
+  m_Range: 1.99
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -230,7 +230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775710300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.57, y: 1.869, z: 1.96}
+  m_LocalPosition: {x: -1.445, y: 1.852, z: 1.599}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1865882006435881239}
@@ -248,13 +248,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8018868, g: 0.73389435, b: 0.5484603, a: 1}
-  m_Intensity: 2
-  m_Range: 2.52
+  m_Intensity: 9
+  m_Range: 2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -335,7 +335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884725100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.62, y: 1.929, z: -1.683}
+  m_LocalPosition: {x: 2.202, y: 0.938, z: -2.009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1865882006435881239}
@@ -353,8 +353,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8018868, g: 0.73389435, b: 0.5484603, a: 1}
-  m_Intensity: 2
-  m_Range: 2.52
+  m_Intensity: 9
+  m_Range: 2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -440,7 +440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937536907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.546, y: 1.394, z: 2.667}
+  m_LocalPosition: {x: 1.631, y: 0.334, z: 2.583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1865882006435881239}
@@ -458,13 +458,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8584906, g: 0.42392325, b: 0.068841234, a: 1}
-  m_Intensity: 2
-  m_Range: 2.52
+  m_Intensity: 9
+  m_Range: 2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1459,6 +1459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Murcielagos
+      objectReference: {fileID: 0}
+    - target: {fileID: 6977586352370569880, guid: 8f65cfb77f926c340aa125edaa31f791,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f65cfb77f926c340aa125edaa31f791, type: 3}

@@ -18,6 +18,7 @@ public class GameEvents : MonoBehaviour
     public event System.Action onLightOff;
     public event System.Action<string> onLightOn;
     public event System.Action<Vector3> moveToOuija;
+    public event System.Action<bool> activaOuija;
 
     [PunRPC]
     public void ApagarLuces()
@@ -39,6 +40,12 @@ public class GameEvents : MonoBehaviour
         moveToOuija(posicion);
     }
 
+    [PunRPC]
+    public void setOuija(bool activado)
+    {
+        activaOuija(activado);
+    }
+
 
     public void EncenderLuzRPC(string nombre)
     {
@@ -47,6 +54,16 @@ public class GameEvents : MonoBehaviour
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("EncenderLuz", RpcTarget.Others, nombre);
     }
+
+
+    public void activarOuijaRPC(bool activado)
+    {
+        
+        setOuija(activado);
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("setOuija", RpcTarget.Others, activado);
+    }
+
 
     void Update()
     {

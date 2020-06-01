@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Runtime.Remoting;
 using UnityEngine;
 
-public class OuijaMoveTo : MonoBehaviour
+public class Ouija : MonoBehaviour
 {
   
     AudioSource audioSource;
-    bool activa = false;
+    public static bool activa = false;
     private Vector3 destino;
     // Start is called before the first frame update
     void Start()

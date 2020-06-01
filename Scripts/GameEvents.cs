@@ -16,12 +16,14 @@ public class GameEvents : MonoBehaviour
     }
 
     public event System.Action onLightOff;
+    public event System.Action bats;
+    public event System.Action cthulhu;
     public event System.Action<string> onLightOn;
     public event System.Action<Vector3> moveToOuija;
     public event System.Action<bool> activaOuija;
 
     [PunRPC]
-    public void ApagarLuces()
+    private void ApagarLuces()
     {
         Debug.Log("Apagando todas las luces");
         onLightOff();
@@ -35,16 +37,30 @@ public class GameEvents : MonoBehaviour
     }
 
     [PunRPC]
-    public void MueveOuija(Vector3 posicion)
+    private void MueveOuija(Vector3 posicion)
     {
         moveToOuija(posicion);
     }
 
     [PunRPC]
-    public void SetOuija(bool activado)
+    private void SetOuija(bool activado)
     {
         Debug.Log("PunRPC setOuija " + activado);
         activaOuija(activado);
+    }
+
+    [PunRPC]
+    private void ActivaMurcielagos()
+    {
+        Debug.Log("Murcielagos");
+        bats();
+    }
+
+    [PunRPC]
+    private void ActivaCthulhu()
+    {
+        Debug.Log("Cthulhu");
+        cthulhu();
     }
 
 
@@ -63,6 +79,22 @@ public class GameEvents : MonoBehaviour
         SetOuija(activado);
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("SetOuija", RpcTarget.Others, activado);
+    }
+
+    public void MurcielagosRPC()
+    {
+        Debug.Log("Activando Murtcielagos");
+        ActivaMurcielagos();
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("ActivaMurcielagos", RpcTarget.Others);
+    }
+
+    public void CthulhuRPC()
+    {
+        Debug.Log("Activando Cthulhu");
+        ActivaCthulhu();
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("ActivaCthulhu", RpcTarget.Others);
     }
 
 

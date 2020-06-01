@@ -17,15 +17,17 @@ public class Tentaculos : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         audioSource= GetComponent<AudioSource>();
+        GameEvents.current.cthulhu += Activar;
     }
 
-    // Update is called once per frame
-    void Update()
+ 
+
+    void Activar()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+       
             StartCoroutine(MuestraTentaculos());
-        }
+        
+
     }
 
     IEnumerator MuestraTentaculos()

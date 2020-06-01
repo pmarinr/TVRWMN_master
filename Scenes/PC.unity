@@ -358,7 +358,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 30806372}
-        m_MethodName: setOuija
+        m_MethodName: ActivarOuijaRPC
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2836,6 +2836,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2465535136323852250, guid: 3e47f7e56bd4f024a82c33d8e32f54e3,
+        type: 3}
+      propertyPath: viewIdField
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 7640773055778695538, guid: 3e47f7e56bd4f024a82c33d8e32f54e3,
         type: 3}
       propertyPath: m_Name

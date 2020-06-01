@@ -28,7 +28,7 @@ public class GameEvents : MonoBehaviour
     }
 
     [PunRPC]
-    public void EncenderLuz(string nombre)
+    private void EncenderLuz(string nombre)
     {
         Debug.Log("Encendiendo " + nombre);
         onLightOn(nombre);
@@ -41,8 +41,9 @@ public class GameEvents : MonoBehaviour
     }
 
     [PunRPC]
-    public void setOuija(bool activado)
+    public void SetOuija(bool activado)
     {
+        Debug.Log("PunRPC setOuija " + activado);
         activaOuija(activado);
     }
 
@@ -56,12 +57,12 @@ public class GameEvents : MonoBehaviour
     }
 
 
-    public void activarOuijaRPC(bool activado)
+    public void ActivarOuijaRPC(bool activado)
     {
-        
-        setOuija(activado);
+        Debug.Log("Activando Ouija");
+        SetOuija(activado);
         PhotonView photonView = PhotonView.Get(this);
-        photonView.RPC("setOuija", RpcTarget.Others, activado);
+        photonView.RPC("SetOuija", RpcTarget.Others, activado);
     }
 
 

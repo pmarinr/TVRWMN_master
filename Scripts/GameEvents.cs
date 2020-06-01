@@ -19,12 +19,14 @@ public class GameEvents : MonoBehaviour
     [PunRPC]
     public void ApagarLuces()
     {
+        Debug.Log("Apagando todas las luces");
         onLightOff();
     }
 
     [PunRPC]
     public void EncenderLuz(string nombre)
     {
+        Debug.Log("Encendiendo " + nombre);
         onLightOn(nombre);
     }
 
@@ -32,6 +34,7 @@ public class GameEvents : MonoBehaviour
 
     public void EncenderLuzRPC(string nombre)
     {
+        Debug.Log("Enviando evento luces a todos los conectados");
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("EncenderLuz", RpcTarget.All, nombre);
     }

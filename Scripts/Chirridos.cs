@@ -7,12 +7,12 @@ public class Chirridos : MonoBehaviour
     public AudioClip[] chirridos;
     // Start is called before the first frame update
     public GameObject source;
-    AudioSource audio;
+    AudioSource audioSource;
     public float ancho,largo,alto;
     public bool activo = true;
     void Start()
     {
-        audio = source.GetComponent<AudioSource>();
+        audioSource = source.GetComponent<AudioSource>();
         StartCoroutine(SonidoCasa());
         
     }
@@ -28,8 +28,8 @@ public class Chirridos : MonoBehaviour
 
     void Chirrido() {
         source.transform.position = new Vector3(Random.Range(-ancho/2,ancho / 2), Random.Range(-largo / 2, largo / 2), Random.Range(-alto / 2, alto / 2));
-        audio.clip = chirridos[Random.Range(0, chirridos.Length)];
-        audio.Play();
+        audioSource.clip = chirridos[Random.Range(0, chirridos.Length)];
+        audioSource.Play();
     }
 
     void OnDrawGizmosSelected()

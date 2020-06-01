@@ -41,7 +41,7 @@ public class RelojSound : MonoBehaviour
     void NewMinute()
     {
         TicTocAudioSource.Play();
-        ManecillaMinutero.Rotate(-6, 0, 0);
+        ManecillaMinutero.Rotate(0, 0, 6);
         minutes++;
         if(minutes == 60)
         {
@@ -57,7 +57,7 @@ public class RelojSound : MonoBehaviour
         {
             Invoke("PlayDong", i * 6);
         }
-        ManecillaHoras.Rotate(-30, 0, 0);
+        ManecillaHoras.Rotate(0, 0, 30);
     }
 
 }

@@ -9,7 +9,7 @@ public class Shadow : MonoBehaviour
     Animator anim;
     BoxCollider boxcol;
     public float restart = 20;
-    AudioSource audio;
+    AudioSource audioSource;
             
             
 // Start is called before the first frame update
@@ -17,7 +17,7 @@ void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         boxcol = gameObject.GetComponent<BoxCollider>();
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
 }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ void Start()
 
     public void Ocultar()
     {
-        audio.Play();
+        audioSource.Play();
         boxcol.enabled = false;
         anim.SetTrigger("Activar");
         Invoke("Mostrar", restart);

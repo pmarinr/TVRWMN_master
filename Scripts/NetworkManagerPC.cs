@@ -180,7 +180,7 @@ namespace TVRWMN
 			// #Critical: We only load if we are the first player, else we rely on  PhotonNetwork.AutomaticallySyncScene to sync our instance scene.
 			if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
 			{
-				Debug.Log("We load the 'Room for 1' ");
+				Debug.Log("Sala Creada ");
 				
 				LogFeedback("Esperando al investigador...");
 

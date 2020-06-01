@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tentaculos : MonoBehaviour
 {
     Animator anim;
-    AudioSource audio;
+    AudioSource audioSource;
     bool active = false;
     // Start is called before the first frame update
     private void Awake()
@@ -16,7 +16,7 @@ public class Tentaculos : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        audio= GetComponent<AudioSource>();
+        audioSource= GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class Tentaculos : MonoBehaviour
             foreach (Transform child in transform)
                 child.gameObject.SetActive(true);
 
-            audio.Play();
+            audioSource.Play();
             anim.SetTrigger("switch");
             yield return new WaitForSeconds(1.5f);
             anim.SetTrigger("switch");

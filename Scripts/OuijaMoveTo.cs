@@ -6,11 +6,11 @@ using UnityEngine;
 public class OuijaMoveTo : MonoBehaviour
 {
     public Transform[] path;
-    AudioSource audio;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine(MoveToRoute(path));
     }
 
@@ -24,8 +24,8 @@ public class OuijaMoveTo : MonoBehaviour
     {
         transform.DOLookAt(pos, .5f);
         transform.DOMove(pos, 2f);
-        audio.pitch = Random.Range(0.9f, 1.1f);
-        audio.Play();
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+        audioSource.Play();
     }
 
     IEnumerator MoveToRoute(Transform[] route)

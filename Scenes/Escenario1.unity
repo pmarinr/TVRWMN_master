@@ -271,6 +271,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7640773055778695541, guid: 3e47f7e56bd4f024a82c33d8e32f54e3,
+        type: 3}
+      propertyPath: layerTablero.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e47f7e56bd4f024a82c33d8e32f54e3, type: 3}
 --- !u!1 &1403299316
@@ -1397,6 +1402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 979631986, guid: 62ebac76d5b589e4dade58ad5c829dcd, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4107552718613748152, guid: 62ebac76d5b589e4dade58ad5c829dcd,
         type: 3}
       propertyPath: path.Array.data[0]

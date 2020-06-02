@@ -20,11 +20,19 @@ public class TextoEvent : MonoBehaviour {
     void MostrarTexto(string txt)
     {
 
-        for (int i = txt.Length; i > 0; i--)
-        {
-            texto.text += txt[i];
-        }
+       
          
         
+    }
+
+    private string TextoInvertido(string txt)
+    {
+        string textoMod = "";
+        for (int i = txt.Length - 1; i > 0; i--)
+        {
+            textoMod += txt[i];
+        }
+
+        return textoMod;
     }
 }

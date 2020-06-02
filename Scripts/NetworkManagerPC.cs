@@ -26,6 +26,9 @@ namespace TVRWMN
 		[SerializeField]
 		private GameObject loaderAnime;
 
+
+		
+		
 		[Space(10)]
 		[Header("Custom Variables")]
 		public InputField roomNameField;
@@ -36,6 +39,7 @@ namespace TVRWMN
 		bool isConnecting;
 
 		string gameVersion = "1";
+		string nombreSala = "";
 
 		private TypedLobby customLobby = new TypedLobby("TVRWMN", LobbyType.Default);
 
@@ -62,7 +66,7 @@ namespace TVRWMN
 		public void ConnectToPhoton()
 		{
 			Debug.Log("Connecting to Photon Network");
-			feedbackText.text = "Connetando...";
+			feedbackText.text = "Conectando...";
 			buttonConect.SetActive(false);
 			loaderAnime.SetActive(true);
 			PhotonNetwork.GameVersion = gameVersion; //1
@@ -99,7 +103,7 @@ namespace TVRWMN
 				Debug.Log("PhotonNetwork.IsConnected! | Trying to Create/Join Room " + "666");
 				RoomOptions roomOptions = new RoomOptions();
 				roomOptions.MaxPlayers = 2;
-				
+				nombreSala = roomNameField.text;
 				TypedLobby typedLobby = new TypedLobby("TVRWMN", LobbyType.Default); //3
 				PhotonNetwork.JoinOrCreateRoom("666", roomOptions, typedLobby); //4
 
@@ -137,7 +141,7 @@ namespace TVRWMN
 		/// </summary>
 		public override void OnDisconnected(DisconnectCause cause)
 		{
-			LogFeedback("<Color=Red>OnDisconnected</Color> " + cause);
+			LogFeedback("<Color=Red>Se ha desconectado</Color> " + cause);
 			Debug.LogError("PUN Basics Tutorial/Launcher:Disconnected");
 
 			// #Critical: we failed to connect or got disconnected. There is not much we can do. Typically, a UI system should be in place to let the user attemp to connect again.
@@ -174,7 +178,7 @@ namespace TVRWMN
 		/// </remarks>
 		public override void OnJoinedRoom()
 		{
-			LogFeedback("<Color=Green>OnJoinedRoom</Color> with " + PhotonNetwork.CurrentRoom.PlayerCount + " Player(s)");
+			LogFeedback("<Color=Green>Sala " + nombreSala + " creada con éxito.</Color> "); // + PhotonNetwork.CurrentRoom.Name);
 			Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.\nFrom here on, your game would be running.");
 
 			// #Critical: We only load if we are the first player, else we rely on  PhotonNetwork.AutomaticallySyncScene to sync our instance scene.

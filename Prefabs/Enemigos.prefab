@@ -111,8 +111,8 @@ GameObject:
   - component: {fileID: 671255390}
   - component: {fileID: 671255392}
   m_Layer: 0
-  m_Name: Luz3
-  m_TagString: Untagged
+  m_Name: Luz3Biblioteca
+  m_TagString: Biblioteca
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,8 +216,8 @@ GameObject:
   - component: {fileID: 1775710301}
   - component: {fileID: 1775710303}
   m_Layer: 0
-  m_Name: Luz1
-  m_TagString: Untagged
+  m_Name: LuzLaboratorio
+  m_TagString: Laboratorio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -321,8 +321,8 @@ GameObject:
   - component: {fileID: 1884725101}
   - component: {fileID: 1884725103}
   m_Layer: 0
-  m_Name: Luz2
-  m_TagString: Untagged
+  m_Name: Luz2Baul
+  m_TagString: Baul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,8 +426,8 @@ GameObject:
   - component: {fileID: 1937536908}
   - component: {fileID: 1937536910}
   m_Layer: 0
-  m_Name: Luz4
-  m_TagString: Untagged
+  m_Name: Luz4Escritorio
+  m_TagString: Escritorio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

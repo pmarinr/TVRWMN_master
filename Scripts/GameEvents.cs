@@ -35,18 +35,7 @@ public class GameEvents : MonoBehaviour
     public event System.Action<bool> activeOuija;
 
 
-
-
-    /*
-    [PunRPC]
-    private void ApagarLuces()
-    {
-        Debug.Log("Apagando todas las luces");
-        onLightOff();
-    }
-
-    
-    */
+    #region PunRPC
 
     [PunRPC]
     private void GetEvent(GEvent e)
@@ -64,16 +53,11 @@ public class GameEvents : MonoBehaviour
                 cthulhu();
                 break;
             case GEvent.OuijaOn:
-                if (!Ouija.activa) {
-                    activeOuija(true);
-                }
+                if (!Ouija.activa) {activeOuija(true); }
                     
                 break;
             case GEvent.OuijaOff:
-                if (Ouija.activa)
-                {
-                    activeOuija(false);
-                }
+                if (Ouija.activa){ activeOuija(false);}
                 break;
             default:
                 break;
@@ -93,50 +77,8 @@ public class GameEvents : MonoBehaviour
         Debug.Log("Encendiendo " + nombre);
         onLightOn(nombre);
     }
-    /*
-        [PunRPC]
-        private void SetOuija(bool activado)
-        {
-            Debug.Log("PunRPC setOuija " + activado);
-            activaOuija(activado);
-        }
 
-        [PunRPC]
-        private void ActivaMurcielagos()
-        {
-            Debug.Log("Murcielagos");
-            bats();
-        }
-
-        [PunRPC]
-        private void ActivaCthulhu()
-        {
-            Debug.Log("Cthulhu");
-            cthulhu();
-        }
-
-
-       
-
-
-        public void ActivarOuijaRPC(bool activado)
-        {
-            Debug.Log("Activando Ouija");
-            //SetOuija(activado);
-            PhotonView photonView = PhotonView.Get(this);
-            photonView.RPC("SetOuija", RpcTarget.All, activado);
-        }
-
-        public void MurcielagosRPC()
-        {
-            Debug.Log("Activando Murtcielagos");
-            //ActivaMurcielagos();
-            PhotonView photonView = PhotonView.Get(this);
-            photonView.RPC("ActivaMurcielagos", RpcTarget.All);
-        }
-
-    */
-
+    #endregion 
     public void ApagarLuces()
     {
         SendRPC(GEvent.LighOff);
@@ -144,7 +86,6 @@ public class GameEvents : MonoBehaviour
 
     public void ActivarOuija() {
         SendRPC(GEvent.OuijaOn);
-
     }
 
     public void DesactivarOuija()
@@ -163,10 +104,11 @@ public class GameEvents : MonoBehaviour
         SendRPC(GEvent.Cthulhu);
     }
 
+    // Estos eventos se llamarán desde el evento OnClick desde un boton y no aceptan un enum como argumento. 
+    // Por eso creamos una función pública para cada boton mas arriba
     private void SendRPC(GEvent e)
     {
         Debug.Log("Enviando Evento "+e);
-        //ActivaCthulhu();
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("GetEvent", RpcTarget.All,e);
     }
@@ -174,7 +116,6 @@ public class GameEvents : MonoBehaviour
     public void EncenderLuzRPC(string nombre)
     {
         Debug.Log("Enviando evento luces a todos los conectados");
-        //EncenderLuz(nombre);
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("EncenderLuz", RpcTarget.All, nombre);
     }
@@ -189,7 +130,6 @@ public class GameEvents : MonoBehaviour
                 Debug.Log("Destino en " + hit.transform.name);
                 Vector3 destino = hit.point;
                 PhotonView photonView = PhotonView.Get(this);
-                //MueveOuija(destino);
                 photonView.RPC("MueveOuija", RpcTarget.All, destino);
             }
         }

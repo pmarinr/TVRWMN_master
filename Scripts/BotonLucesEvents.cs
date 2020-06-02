@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LucesEvents : MonoBehaviour { 
+public class BotonLucesEvents : MonoBehaviour { 
     // Start is called before the first frame update
     Light luz;
-   
+    public Sprite icono_on, icono_off;
+    public Color color_on, color_off;
+    Image boton;
     void Start()
     {
         GameEvents.current.onLightOff += Apagar;
         GameEvents.current.onLightOn += Encender;
 
-        luz = GetComponent<Light>();
+        boton = GetComponent<Image>();
     }
 
     void Apagar()
     {
-        luz.enabled = false;
-      
+        boton.sprite = icono_off;
+        boton.color = color_off;
     }
 
     void Encender(string nombre)
     {
-        
-       
         if (transform.CompareTag(nombre))
         {
-            //GameEvents.current.ApagarLuces();
-            luz.enabled = !luz.enabled;
            
+            boton.sprite = icono_on;
+            boton.color = color_on;
         }
         else
         {

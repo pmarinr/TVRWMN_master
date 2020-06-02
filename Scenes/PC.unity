@@ -1103,13 +1103,14 @@ GameObject:
   - component: {fileID: 283974779}
   - component: {fileID: 283974781}
   - component: {fileID: 283974780}
+  - component: {fileID: 283974782}
   m_Layer: 5
   m_Name: PanelLuces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &283974779
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1171,6 +1172,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283974778}
   m_CullTransparentMesh: 0
+--- !u!95 &283974782
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283974778}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09a9ab0fe0df7264789a7215cfc50d05, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &322866770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,6 +2416,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 233289959}
+        m_MethodName: previewCam
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1311816701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,190 +2741,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 671255389, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
+    - target: {fileID: 1970563159, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
       propertyPath: m_Name
-      value: Luz3Biblioteca
+      value: TextDemon
       objectReference: {fileID: 0}
-    - target: {fileID: 671255389, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: m_TagString
-      value: Biblioteca
-      objectReference: {fileID: 0}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_on
-      value: 
-      objectReference: {fileID: 21300000, guid: b2c0cfb83f3d84e088f0d728e09376e1,
-        type: 3}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_off
-      value: 
-      objectReference: {fileID: 21300000, guid: 18aa07e5a100a4d4688eeb5735422d01,
-        type: 3}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.r
-      value: 0.8018868
-      objectReference: {fileID: 0}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.g
-      value: 0.78737724
-      objectReference: {fileID: 0}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.b
-      value: 0.19290671
-      objectReference: {fileID: 0}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.r
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.g
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.b
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 671255392, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: boton
-      value: 
-      objectReference: {fileID: 178224737}
-    - target: {fileID: 1775710300, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: m_Name
-      value: LuzLaboratorio
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710300, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: m_TagString
-      value: Laboratorio
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_on
-      value: 
-      objectReference: {fileID: 21300000, guid: b2c0cfb83f3d84e088f0d728e09376e1,
-        type: 3}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_off
-      value: 
-      objectReference: {fileID: 21300000, guid: 18aa07e5a100a4d4688eeb5735422d01,
-        type: 3}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.r
-      value: 0.8018868
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.g
-      value: 0.78737724
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.b
-      value: 0.19290671
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.r
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.g
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.b
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1775710303, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: boton
-      value: 
-      objectReference: {fileID: 878173645}
-    - target: {fileID: 1884725100, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: m_Name
-      value: Luz2Baul
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725100, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: m_TagString
-      value: Baul
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_on
-      value: 
-      objectReference: {fileID: 21300000, guid: b2c0cfb83f3d84e088f0d728e09376e1,
-        type: 3}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_off
-      value: 
-      objectReference: {fileID: 21300000, guid: 18aa07e5a100a4d4688eeb5735422d01,
-        type: 3}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.r
-      value: 0.8018868
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.g
-      value: 0.78737724
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.b
-      value: 0.19290671
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.r
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.g
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.b
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1884725103, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: boton
-      value: 
-      objectReference: {fileID: 96738175}
-    - target: {fileID: 1937536907, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: m_Name
-      value: Luz4Escritorio
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536907, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: m_TagString
-      value: Escritorio
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_on
-      value: 
-      objectReference: {fileID: 21300000, guid: b2c0cfb83f3d84e088f0d728e09376e1,
-        type: 3}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: icono_off
-      value: 
-      objectReference: {fileID: 21300000, guid: 18aa07e5a100a4d4688eeb5735422d01,
-        type: 3}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.r
-      value: 0.8018868
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.g
-      value: 0.78737724
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_on.b
-      value: 0.19290671
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.r
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.g
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: color_off.b
-      value: 0.764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1937536910, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
-      propertyPath: boton
-      value: 
-      objectReference: {fileID: 1025658822}
     - target: {fileID: 5534108947396186368, guid: 3991fcf7c60480442a205db98bee6bac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2954,7 +2805,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poltergeist
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1970563163, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
+    - {fileID: 1970563162, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
 --- !u!1 &1626947997
 GameObject:
@@ -3275,6 +3128,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &2142854016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1970563159, guid: 3991fcf7c60480442a205db98bee6bac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482608420}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2142854017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142854016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95ac6c88671a7b45b9fca1f106e07aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2143495058
 GameObject:
   m_ObjectHideFlags: 0

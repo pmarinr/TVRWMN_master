@@ -31,6 +31,7 @@ public class GameEvents : MonoBehaviour
     public event System.Action bats;
     public event System.Action cthulhu;
     public event System.Action<string> onLightOn;
+    public event System.Action<string> demonText;
     public event System.Action<Vector3> moveToOuija;
     public event System.Action<bool> activeOuija;
 
@@ -78,6 +79,13 @@ public class GameEvents : MonoBehaviour
         onLightOn(nombre);
     }
 
+    [PunRPC]
+    private void TextoDemoniaco(string txt)
+    {
+        Debug.Log("Enviando texto " + txt);
+        demonText(txt);
+    }
+
     #endregion 
     public void ApagarLuces()
     {
@@ -118,6 +126,14 @@ public class GameEvents : MonoBehaviour
         Debug.Log("Enviando evento luces a todos los conectados");
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("EncenderLuz", RpcTarget.All, nombre);
+    }
+
+
+    public void EnviarTextoRPC(string txt)
+    {
+        Debug.Log("Enviando texto");
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("TextoDemoniaco", RpcTarget.All,txt);
     }
     void Update()
     {

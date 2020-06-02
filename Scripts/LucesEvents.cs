@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LucesEvents : MonoBehaviour
-{
+public class LucesEvents : MonoBehaviour { 
     // Start is called before the first frame update
     Light luz;
     void Start()

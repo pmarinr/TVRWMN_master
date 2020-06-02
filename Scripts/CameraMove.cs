@@ -24,7 +24,7 @@ public class CameraMove : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Ouija.activa) GameEvents.current.SendRPC(GameEvents.GEvent.OuijaOf);
+            
             nextCam();
 
         }
@@ -32,7 +32,7 @@ public class CameraMove : MonoBehaviour
 
     public void nextCam()
     {
-        if (Ouija.activa) GameEvents.current.SendRPC(GameEvents.GEvent.OuijaOf);
+        
         //cam.orthographic = false;
         pos = (pos >= PositionList.Length-1) ? 0 : pos + 1;
         ChangePos(PositionList[pos]);
@@ -43,7 +43,7 @@ public class CameraMove : MonoBehaviour
     public void previewCam()
     {
         //cam.orthographic = false;
-        if (Ouija.activa) GameEvents.current.SendRPC(GameEvents.GEvent.OuijaOf);
+       
         pos = (pos > 0 ) ? pos - 1: PositionList.Length - 1;
         ChangePos(PositionList[pos]);
 
@@ -51,7 +51,7 @@ public class CameraMove : MonoBehaviour
 
     public void CameraMap()
     {
-        if (Ouija.activa) GameEvents.current.SendRPC(GameEvents.GEvent.OuijaOf);
+        
         //cam.orthographic = true;
         ChangePos(CameraMapPos);
     }
@@ -60,7 +60,7 @@ public class CameraMove : MonoBehaviour
     {
         //cam.orthographic = false;
         ChangePos(CameraOuijaPos);
-        if (Ouija.activa) GameEvents.current.SendRPC(GameEvents.GEvent.OuijaOn);
+      
 
     }
 

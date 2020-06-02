@@ -15,7 +15,7 @@ public class Ouija : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         GameEvents.current.moveToOuija += MoveTo;
-        GameEvents.current.activaOuija += setActive;
+        GameEvents.current.activeOuija += setActive;
     }
 
     // Update is called once per frame

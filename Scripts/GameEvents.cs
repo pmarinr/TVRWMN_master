@@ -14,13 +14,12 @@ public class GameEvents : MonoBehaviour
         Bats,
         Cthulhu,
         OuijaOn,
-        OuijaOf
+        OuijaOff
     }
 
     
     // Start is called before the first frame update
     public static GameEvents current;
-    public bool activa = true;
     public LayerMask layerTablero;
     void Awake()
     {
@@ -33,7 +32,7 @@ public class GameEvents : MonoBehaviour
     public event System.Action cthulhu;
     public event System.Action<string> onLightOn;
     public event System.Action<Vector3> moveToOuija;
-    public event System.Action<bool> activaOuija;
+    public event System.Action<bool> activeOuija;
 
 
 
@@ -50,7 +49,7 @@ public class GameEvents : MonoBehaviour
     */
 
     [PunRPC]
-    private void SendEvent(GEvent e)
+    private void GetEvent(GEvent e)
     {
         Debug.Log("Send event " + e);
         switch (e)
@@ -65,10 +64,16 @@ public class GameEvents : MonoBehaviour
                 cthulhu();
                 break;
             case GEvent.OuijaOn:
-                activaOuija(true);
+                if (!Ouija.activa) {
+                    activeOuija(true);
+                }
+                    
                 break;
-            case GEvent.OuijaOf:
-                activaOuija(false);
+            case GEvent.OuijaOff:
+                if (Ouija.activa)
+                {
+                    activeOuija(false);
+                }
                 break;
             default:
                 break;
@@ -132,12 +137,38 @@ public class GameEvents : MonoBehaviour
 
     */
 
-    public void SendRPC(GEvent e)
+    public void ApagarLuces()
+    {
+        SendRPC(GEvent.LighOff);
+    }
+
+    public void ActivarOuija() {
+        SendRPC(GEvent.OuijaOn);
+
+    }
+
+    public void DesactivarOuija()
+    {
+        SendRPC(GEvent.OuijaOff);
+
+    }
+
+    public void InvocarMurcielagos()
+    {
+        SendRPC(GEvent.Bats);
+    }
+
+    public void InvocarCthulhu()
+    {
+        SendRPC(GEvent.Cthulhu);
+    }
+
+    private void SendRPC(GEvent e)
     {
         Debug.Log("Enviando Evento "+e);
         //ActivaCthulhu();
         PhotonView photonView = PhotonView.Get(this);
-        photonView.RPC("SendEvent", RpcTarget.All,e);
+        photonView.RPC("GetEvent", RpcTarget.All,e);
     }
 
     public void EncenderLuzRPC(string nombre)
@@ -149,7 +180,7 @@ public class GameEvents : MonoBehaviour
     }
     void Update()
     {
-        if (activa && Input.GetMouseButtonDown(0))
+        if (Ouija.activa && Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
 

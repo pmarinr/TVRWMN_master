@@ -17,22 +17,20 @@ public class TextoEvent : MonoBehaviour {
 
     
 
-    void MostrarTexto(string txt)
+    public void MostrarTexto(string txt)
     {
 
-       
-         
-        
+        texto.text = TextoInvertido(txt);
     }
 
     private string TextoInvertido(string txt)
     {
         string textoMod = "";
-        for (int i = txt.Length - 1; i > 0; i--)
+        for (int i = txt.Length - 1; i >= 0; i--)
         {
             textoMod += txt[i];
         }
-
+        Debug.Log("Texto"+textoMod);
         return textoMod;
     }
 }

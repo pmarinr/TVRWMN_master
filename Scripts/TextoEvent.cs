@@ -20,8 +20,11 @@ public class TextoEvent : MonoBehaviour {
     void MostrarTexto(string txt)
     {
 
-
-        texto.text = txt;
+        for (int i = txt.Length; i > 0; i--)
+        {
+            texto.text += txt[i];
+        }
+         
         
     }
 }

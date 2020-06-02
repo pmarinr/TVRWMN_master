@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
 using Photon.Realtime;
+using UnityEngine.UI;
 
 public class GameEvents : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class GameEvents : MonoBehaviour
     // Start is called before the first frame update
     public static GameEvents current;
     public LayerMask layerTablero;
+    public InputField inputTexto;
     void Awake()
     {
         current = this;
@@ -129,11 +131,18 @@ public class GameEvents : MonoBehaviour
     }
 
 
-    public void EnviarTextoRPC(string txt)
+    private void EnviarTextoRPC(string txt)
     {
         Debug.Log("Enviando texto");
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("TextoDemoniaco", RpcTarget.All,txt);
+    }
+
+    public void EnviarTextoDemoniaco()
+    {
+        if(inputTexto.text.Length > 0) { 
+            EnviarTextoRPC(inputTexto.text);
+        }
     }
     void Update()
     {

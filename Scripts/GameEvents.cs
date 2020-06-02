@@ -36,6 +36,19 @@ public class GameEvents : MonoBehaviour
     public event System.Action<bool> activaOuija;
 
 
+
+
+    /*
+    [PunRPC]
+    private void ApagarLuces()
+    {
+        Debug.Log("Apagando todas las luces");
+        onLightOff();
+    }
+
+    
+    */
+
     [PunRPC]
     private void SendEvent(GEvent e)
     {
@@ -63,12 +76,10 @@ public class GameEvents : MonoBehaviour
 
     }
 
-    /*
     [PunRPC]
-    private void ApagarLuces()
+    private void MueveOuija(Vector3 posicion)
     {
-        Debug.Log("Apagando todas las luces");
-        onLightOff();
+        moveToOuija(posicion);
     }
 
     [PunRPC]
@@ -76,12 +87,6 @@ public class GameEvents : MonoBehaviour
     {
         Debug.Log("Encendiendo " + nombre);
         onLightOn(nombre);
-    }
-    */
-    [PunRPC]
-    private void MueveOuija(Vector3 posicion)
-    {
-        moveToOuija(posicion);
     }
     /*
         [PunRPC]
@@ -106,13 +111,7 @@ public class GameEvents : MonoBehaviour
         }
 
 
-        public void EncenderLuzRPC(string nombre)
-        {
-            Debug.Log("Enviando evento luces a todos los conectados");
-            //EncenderLuz(nombre);
-            PhotonView photonView = PhotonView.Get(this);
-            photonView.RPC("EncenderLuz", RpcTarget.All, nombre);
-        }
+       
 
 
         public void ActivarOuijaRPC(bool activado)
@@ -139,6 +138,14 @@ public class GameEvents : MonoBehaviour
         //ActivaCthulhu();
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("SendEvent", RpcTarget.All,e);
+    }
+
+    public void EncenderLuzRPC(string nombre)
+    {
+        Debug.Log("Enviando evento luces a todos los conectados");
+        //EncenderLuz(nombre);
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("EncenderLuz", RpcTarget.All, nombre);
     }
     void Update()
     {

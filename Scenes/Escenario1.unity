@@ -271,11 +271,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7640773055778695541, guid: 3e47f7e56bd4f024a82c33d8e32f54e3,
-        type: 3}
-      propertyPath: layerTablero.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e47f7e56bd4f024a82c33d8e32f54e3, type: 3}
 --- !u!1 &1403299316

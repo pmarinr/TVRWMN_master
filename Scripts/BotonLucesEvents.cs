@@ -25,7 +25,7 @@ public class BotonLucesEvents : MonoBehaviour {
 
     void Encender(string nombre)
     {
-        if (transform.CompareTag(nombre))
+        if (transform.CompareTag(nombre) && boton.color == color_off )
         {
            
             boton.sprite = icono_on;

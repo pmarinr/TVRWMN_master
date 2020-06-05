@@ -142,7 +142,7 @@ namespace TVRWMN
 		public override void OnDisconnected(DisconnectCause cause)
 		{
 			LogFeedback("<Color=Red>Se ha desconectado</Color> " + cause);
-			Debug.LogError("PUN Basics Tutorial/Launcher:Disconnected");
+			
 
 			// #Critical: we failed to connect or got disconnected. There is not much we can do. Typically, a UI system should be in place to let the user attemp to connect again.
 			loaderAnime.SetActive(false);

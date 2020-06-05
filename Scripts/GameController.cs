@@ -14,6 +14,11 @@ public class GameController : MonoBehaviour
     public static Transform LeftHand;
     public static Transform RightHand;
 
+
+    public Transform Player2;
+    public Transform LeftHand2;
+    public Transform RightHand2;
+
     public static void  UpdatePlayer()
     {
         Player = GameObject.FindWithTag("Player").transform;
@@ -28,4 +33,13 @@ public class GameController : MonoBehaviour
     {
         Player = GameObject.FindWithTag("PlayerManoDch").transform;
     }
+
+    private void Update()
+    {
+        Player2 = Player;
+        LeftHand2 = LeftHand;
+        RightHand2 = RightHand;
+    }
+
+
 }

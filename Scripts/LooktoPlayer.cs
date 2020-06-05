@@ -2,34 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LooktoPlayer : MonoBehaviour
+public class LookToPlayer : MonoBehaviour
 {
-    public Transform target;
+    public Transform player;
+    public Transform head;
     public float speed = 1.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        if(target!= null)
+        if(player!= null && head!= null)
         {
-            Vector3 targetDirection = transform.position - target.position;
-
-            // The step size is equal to speed times frame time.
+            Vector3 targetDirection = head.transform.position - player.position;
             float singleStep = speed * Time.deltaTime;
-
-            // Rotate the forward vector towards the target direction by one step
-            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
-
-            // Draw a ray pointing at our target in
-            Debug.DrawRay(transform.position, newDirection, Color.red);
-
-            // Calculate a rotation a step closer to the target and applies rotation to this object
-            transform.rotation = Quaternion.LookRotation(newDirection);
+            Vector3 newDirection = Vector3.RotateTowards(head.transform.forward, targetDirection, singleStep, 0.0f);
+            Debug.DrawRay(head.transform.position, newDirection, Color.red);
+            head.transform.rotation = Quaternion.LookRotation(newDirection);
         }
         
     }

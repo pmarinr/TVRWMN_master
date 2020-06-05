@@ -8,9 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 10
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 87f1937926651724586acc8842735ea6
-  m_OcclusionCullingData: {fileID: 36300000, guid: ff49051a985c45a4b8831d19703b6a45,
-    type: 2}
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -852,6 +851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjetosInteractivos
       objectReference: {fileID: 0}
+    - target: {fileID: 6905763258197656033, guid: 62ebac76d5b589e4dade58ad5c829dcd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ebac76d5b589e4dade58ad5c829dcd, type: 3}
 --- !u!1 &178224734
@@ -1117,8 +1121,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233289958}
-  m_LocalRotation: {x: 0.6949166, y: 0.002562816, z: -0.0025120436, w: 0.7190814}
-  m_LocalPosition: {x: -0.31, y: 7.5, z: -0}
+  m_LocalRotation: {x: 0.06444454, y: -0.017962147, z: 0.0011585114, w: 0.997759}
+  m_LocalPosition: {x: 0.3488031, y: 2.3221452, z: -1.4784815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1555,13 +1559,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382134664}
-  m_LocalRotation: {x: 0.9673482, y: 0.011196718, z: -0.04341951, w: 0.24945293}
+  m_LocalRotation: {x: 0.94858, y: -0.014064539, z: -0.0425771, w: -0.3133455}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1121326797}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 151.08, y: 5.14, z: 0}
+  m_LocalEulerAnglesHint: {x: 216.56, y: 5.14, z: 0}
 --- !u!108 &382134666
 Light:
   m_ObjectHideFlags: 0
@@ -2308,6 +2312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Iluminacion
       objectReference: {fileID: 0}
+    - target: {fileID: 6963766925744449801, guid: 6a376bc11d3cb1c46a503db41349f6b3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7670281322010058433, guid: 6a376bc11d3cb1c46a503db41349f6b3,
         type: 3}
       propertyPath: m_IsActive
@@ -2468,6 +2477,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1922753126, guid: aaa20b359f0534d479d9da690e4f0ccc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922753126, guid: aaa20b359f0534d479d9da690e4f0ccc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922753126, guid: aaa20b359f0534d479d9da690e4f0ccc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3962264
+      objectReference: {fileID: 0}
     - target: {fileID: 1808665838582428552, guid: aaa20b359f0534d479d9da690e4f0ccc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2527,6 +2548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Escenario
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808665838582428559, guid: aaa20b359f0534d479d9da690e4f0ccc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7067808384786545049, guid: aaa20b359f0534d479d9da690e4f0ccc,
         type: 3}
@@ -3699,6 +3725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameEvents
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640773055778695538, guid: 3e47f7e56bd4f024a82c33d8e32f54e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7640773055778695540, guid: 3e47f7e56bd4f024a82c33d8e32f54e3,
         type: 3}

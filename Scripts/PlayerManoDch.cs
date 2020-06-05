@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerManoDch : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        GameController.UpdateRightHand();
+        GameController.RightHand = this.transform;
     }
 
   

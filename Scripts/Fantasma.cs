@@ -11,26 +11,5 @@ public class Fantasma : MonoBehaviour
 
     Transform player;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        looktoplayer.player = GameController.Player;   
-    }
-
-    public void LeftHandTo(Transform target)
-    {
-        lefthand.target = target;
-        apuntar = true;
-    }
-
-    public void RightHandTo(Transform target)
-    {
-        righthand.target = target;
-        apuntar = true;
-    }
-
-    private void OnDisable()
-    {
-       apuntar = false;
-    }
+     
 }

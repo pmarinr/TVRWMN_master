@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerManoIzq : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        GameController.UpdateLeftHand();
+        GameController.LeftHand = this.transform;
     }
 
-  
+
 }

@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerCabeza : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        GameController.UpdatePlayer();
+        GameController.Player = this.transform;
     }
 
    

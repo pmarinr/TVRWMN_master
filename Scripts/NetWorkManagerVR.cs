@@ -101,9 +101,7 @@ namespace TVRWMN
 		public override void OnDisconnected(DisconnectCause cause)
 		{
 			LogFeedback("<Color=Red>Desconectado</Color> " + cause);
-			Debug.LogError("PUN Basics Tutorial/Launcher:Disconnected");
-
-			// #Critical: we failed to connect or got disconnected. There is not much we can do. Typically, a UI system should be in place to let the user attemp to connect again.
+			
 			loaderAnime.SetActive(false);
 			isConnecting = false;
 		}
@@ -124,6 +122,7 @@ namespace TVRWMN
 			LogFeedback("Partida encontrada");
 			escenarioMultiplayer.SetActive(false);
 			SceneManager.LoadScene("Escenario1", LoadSceneMode.Additive);
+			
 			GameObject cabezaOnline = PhotonNetwork.Instantiate("Cabeza", head.transform.position, head.transform.rotation, 0);
 			cabezaOnline.transform.parent = head.transform;
 			
@@ -186,7 +185,16 @@ namespace TVRWMN
 			}
 		}
 
-		
-	}
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+				JoinRoom();
+
+			}
+        }
+
+
+    }
 }
 

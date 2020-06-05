@@ -10,12 +10,15 @@ public class Fantasma : MonoBehaviour
     public static bool apuntar = false;
 
     Transform player;
-    
+
     // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        looktoplayer.player = GameController.Player;   
+        Debug.LogError("Fantasma.cs Enable:Accediendo a Player");
+        looktoplayer.player = GameController.Player;
     }
+
+
 
     public void LeftHandTo(Transform target)
     {

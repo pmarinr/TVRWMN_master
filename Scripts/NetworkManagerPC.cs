@@ -101,11 +101,11 @@ namespace TVRWMN
 				
 				PhotonNetwork.LocalPlayer.NickName = "PC"; 
 				Debug.Log("PhotonNetwork.IsConnected! | Trying to Create/Join Room " + "666");
-				RoomOptions roomOptions = new RoomOptions();
+				RoomOptions roomOptions = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = 2};
 				roomOptions.MaxPlayers = 2;
 				nombreSala = roomNameField.text;
 				TypedLobby typedLobby = new TypedLobby("TVRWMN", LobbyType.Default); //3
-				PhotonNetwork.JoinOrCreateRoom("666", roomOptions, typedLobby); //4
+				PhotonNetwork.CreateRoom(nombreSala, roomOptions, typedLobby); //4
 
 			}
 			else

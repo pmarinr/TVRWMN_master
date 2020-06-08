@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using VRTK.Examples;
+using Photon.Realtime;
 
 public class Fantasma : MonoBehaviour
 {
@@ -13,7 +15,9 @@ public class Fantasma : MonoBehaviour
     Animator anim;
     AudioSource audioSource;
     bool active = false;
-    Transform player;
+    Vector3 pos_original;
+    Quaternion rot_original;
+    
 
     // Start is called before the first frame update
     private void OnEnable()
@@ -27,6 +31,8 @@ public class Fantasma : MonoBehaviour
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         GameEvents.current.fantasma += Activar;
+        pos_original =  transform.position;
+        rot_original = transform.rotation;
     }
 
 
@@ -61,13 +67,23 @@ public class Fantasma : MonoBehaviour
             audioSource.Play();
             transform.DOLocalMoveY(transform.position.y + 3, 2);
             //transform.position = GameController.Player.position + GameController.Player.forward*3;
-            yield return new WaitForSeconds(3f);
-            transform.DOLookAt(GameController.Player.position, 1,AxisConstraint.X);
+            yield return new WaitForSeconds(10f);
+            transform.DOLookAt(GameController.Player.position , 1,AxisConstraint.Y);
             yield return new WaitForSeconds(1f);
-            transform.DOLocalMoveZ(transform.position.z - 2, 1);
+            transform.DOMove(new Vector3(GameController.Player.position.x,0, GameController.Player.position.z),1);
             
-            
+            yield return new WaitForSeconds(1f);
+            transform.position = pos_original;
+            transform.rotation = rot_original;
             active = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(MuestraFantasma());
         }
     }
 }

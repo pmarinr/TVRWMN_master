@@ -19,6 +19,14 @@ public class GameController : MonoBehaviour
     public Transform LeftHand2;
     public Transform RightHand2;
 
+    public void Start()
+    {
+        if(Player2 != null)
+        {
+            Player = Player2;
+        }
+    }
+
     public static void  UpdatePlayer()
     {
         Player = GameObject.FindWithTag("Player").transform;

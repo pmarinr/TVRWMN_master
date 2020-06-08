@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1307748135154086400}
   - component: {fileID: 5417005076201909602}
   - component: {fileID: 3743871576729787088}
-  - component: {fileID: 6065472448509488980}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -48,7 +47,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7463852294264765103}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -80,20 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &6065472448509488980
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7463852294264765103}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000029802322, y: 0, z: 0}
 --- !u!1 &8244258432797539251
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,9 +92,10 @@ GameObject:
   - component: {fileID: 8253626500252510063}
   - component: {fileID: 6832563737237718638}
   - component: {fileID: 128785245018626527}
+  - component: {fileID: 1071200267274400795}
   m_Layer: 0
   m_Name: Cabeza
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -213,3 +199,15 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &1071200267274400795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8244258432797539251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbaeb3d18db45247b2b08b9d8d39646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

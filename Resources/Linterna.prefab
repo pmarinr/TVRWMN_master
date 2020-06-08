@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2770113905858091701}
   - component: {fileID: 2770113905858091702}
   m_Layer: 0
-  m_Name: Point Light (2)
+  m_Name: LinternaLuz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,9 +244,10 @@ GameObject:
   - component: {fileID: 2770113906228447394}
   - component: {fileID: 5788459414955108702}
   - component: {fileID: 8287961085420800689}
+  - component: {fileID: 5189308697933365725}
   m_Layer: 0
   m_Name: Linterna
-  m_TagString: Untagged
+  m_TagString: PlayerManoDch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -307,6 +308,18 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &5189308697933365725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770113906228447395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100c6850cac793e4999f612e54d7ff56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2770113906570329127
 GameObject:
   m_ObjectHideFlags: 0

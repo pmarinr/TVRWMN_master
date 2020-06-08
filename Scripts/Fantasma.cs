@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using DG.Tweening;
 
 public class Fantasma : MonoBehaviour
 {
@@ -8,7 +10,9 @@ public class Fantasma : MonoBehaviour
     public LookToPlayer looktoplayer;
     public HandToObject lefthand, righthand;
     public static bool apuntar = false;
-
+    Animator anim;
+    AudioSource audioSource;
+    bool active = false;
     Transform player;
 
     // Start is called before the first frame update
@@ -16,6 +20,13 @@ public class Fantasma : MonoBehaviour
     {
         Debug.LogError("Fantasma.cs Enable:Accediendo a Player");
         looktoplayer.player = GameController.Player;
+    }
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        GameEvents.current.fantasma += Activar;
     }
 
 
@@ -35,5 +46,25 @@ public class Fantasma : MonoBehaviour
     private void OnDisable()
     {
        apuntar = false;
+    }
+
+    void Activar()
+    {
+        StartCoroutine(MuestraFantasma());
+    }
+
+    IEnumerator MuestraFantasma()
+    {
+        if (!active)
+        {
+            active = true;
+            audioSource.Play();
+            transform.position = GameController.Player.position - GameController.Player.forward;
+            yield return new WaitForSeconds(1.5f);
+            transform.DOLocalMoveZ(transform.position.z - 2, 1);
+            
+            
+            active = false;
+        }
     }
 }

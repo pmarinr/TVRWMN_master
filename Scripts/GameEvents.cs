@@ -15,7 +15,8 @@ public class GameEvents : MonoBehaviour
         Bats,
         Cthulhu,
         OuijaOn,
-        OuijaOff
+        OuijaOff,
+        Fantasma
     }
 
     
@@ -32,6 +33,7 @@ public class GameEvents : MonoBehaviour
     public event System.Action onLightOff;
     public event System.Action bats;
     public event System.Action cthulhu;
+    public event System.Action fantasma;
     public event System.Action<string> onLightOn;
     public event System.Action<string> demonText;
     public event System.Action<Vector3> moveToOuija;
@@ -54,6 +56,9 @@ public class GameEvents : MonoBehaviour
                 break;
             case GEvent.Cthulhu:
                 cthulhu();
+                break;
+            case GEvent.Fantasma:
+                fantasma();
                 break;
             case GEvent.OuijaOn:
                 if (!Ouija.activa) {activeOuija(true); }
@@ -112,6 +117,11 @@ public class GameEvents : MonoBehaviour
     public void InvocarCthulhu()
     {
         SendRPC(GEvent.Cthulhu);
+    }
+
+    public void InvocarFantasma()
+    {
+        SendRPC(GEvent.Fantasma);
     }
 
     // Estos eventos se llamarán desde el evento OnClick desde un boton y no aceptan un enum como argumento. 

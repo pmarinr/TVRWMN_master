@@ -59,8 +59,11 @@ public class Fantasma : MonoBehaviour
         {
             active = true;
             audioSource.Play();
-            transform.position = GameController.Player.position - GameController.Player.forward;
-            yield return new WaitForSeconds(1.5f);
+            transform.DOLocalMoveY(transform.position.y + 3, 2);
+            //transform.position = GameController.Player.position + GameController.Player.forward*3;
+            yield return new WaitForSeconds(3f);
+            transform.DOLookAt(GameController.Player, 1,AxisConstraint.X);
+            yield return new WaitForSeconds(1f);
             transform.DOLocalMoveZ(transform.position.z - 2, 1);
             
             

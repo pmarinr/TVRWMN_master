@@ -19,12 +19,7 @@ public class Fantasma : MonoBehaviour
     Quaternion rot_original;
     
 
-    // Start is called before the first frame update
-    private void OnEnable()
-    {
-        Debug.LogError("Fantasma.cs Enable:Accediendo a Player");
-        looktoplayer.player = GameController.Player;
-    }
+ 
 
     private void Start()
     {
@@ -63,6 +58,7 @@ public class Fantasma : MonoBehaviour
     {
         if (!active)
         {
+            looktoplayer.player = GameController.Player;
             active = true;
             audioSource.Play();
             transform.DOLocalMoveY(transform.position.y + 3, 2);

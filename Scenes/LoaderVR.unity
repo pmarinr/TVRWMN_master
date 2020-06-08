@@ -413,7 +413,7 @@ PrefabInstance:
     - target: {fileID: 5013938737337360823, guid: 7e01a7a01148e794292598c79780a608,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5013938737337360823, guid: 7e01a7a01148e794292598c79780a608,
         type: 3}
@@ -589,6 +589,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 196716607}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &224545545 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 815685921}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &269272572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,6 +1296,7 @@ MonoBehaviour:
   handR: {fileID: 563607930}
   handL: {fileID: 1182968947}
   isConnecting: 0
+  texto_ficha: {fileID: 224545545}
 --- !u!4 &600155507
 Transform:
   m_ObjectHideFlags: 0
@@ -1414,20 +1427,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58037855}
     m_Modifications:
-    - target: {fileID: 122156727720225164, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b36f7a9f2f0c91e41928cb1123e5b893, type: 2}
     - target: {fileID: 1841175003939347792, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Name
       value: Folio
-      objectReference: {fileID: 0}
-    - target: {fileID: 1841175003939347792, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_TagString
-      value: Level
       objectReference: {fileID: 0}
     - target: {fileID: 3447069222590803779, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
@@ -1483,63 +1486,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_Text
-      value: "<b>Mansion Encantada</b> \n<b>Estado:</b> Abierta\n<b>Escena:</b>\nMansi\xF3n
-        encantada.\n<b>Jugadores: 2</b>"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 602ae23d4bd8a45428f26ce8cd0c130f,
-        type: 3}
-    - target: {fileID: 5290199637073464107, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 3.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637073464107, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -47.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637073464107, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 146.97052
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637073464107, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 132.1961
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637814653829, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637814653829, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5290199637814653829, guid: 794d48f770d3c5d4d931d94cfce575d3,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794d48f770d3c5d4d931d94cfce575d3, type: 3}
@@ -1704,6 +1650,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58037855}
     m_Modifications:
+    - target: {fileID: 1326523199, guid: 794d48f770d3c5d4d931d94cfce575d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326523200, guid: 794d48f770d3c5d4d931d94cfce575d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 122156727720225164, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1779,14 +1733,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: '<b>Valdemor</b>
 
-        <b>Estado:</b> Abierta
-
-        <b>Escena:</b>
-
-        Sacristia.
-
-        <b>Jugadores:
-        2</b>'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
@@ -1841,12 +1788,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794d48f770d3c5d4d931d94cfce575d3, type: 3}
---- !u!224 &750566844 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5290199637073464107, guid: 794d48f770d3c5d4d931d94cfce575d3,
-    type: 3}
-  m_PrefabInstance: {fileID: 719932014}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &795820119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,6 +1869,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58037855}
     m_Modifications:
+    - target: {fileID: 1326523199, guid: 794d48f770d3c5d4d931d94cfce575d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326523200, guid: 794d48f770d3c5d4d931d94cfce575d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 122156727720225164, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2003,14 +1952,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: '<b>666</b>
 
-        <b>Estado:</b> Abierta
-
-        <b>Escena:</b>
-
-        Hospital
-
-        <b>Jugadores:
-        2</b>'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 5290199637073464100, guid: 794d48f770d3c5d4d931d94cfce575d3,
         type: 3}
@@ -2888,81 +2830,6 @@ Transform:
   m_Father: {fileID: 2124380253}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 180}
---- !u!1 &1326523199
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1326523200}
-  - component: {fileID: 1326523202}
-  - component: {fileID: 1326523201}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1326523200
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326523199}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0018999181}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 750566844}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.6, y: 113.7}
-  m_SizeDelta: {x: 78.84085, y: 73.76604}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1326523201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326523199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.8156863}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -6964899388812490694, guid: 230d64bac2c377b4bb66d9953ae4d03a,
-    type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1326523202
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326523199}
-  m_CullTransparentMesh: 0
 --- !u!1 &1343364293
 GameObject:
   m_ObjectHideFlags: 0

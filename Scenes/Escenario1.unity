@@ -1017,7 +1017,7 @@ PrefabInstance:
     - target: {fileID: 5534108946624099766, guid: 3991fcf7c60480442a205db98bee6bac,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5534108947396186368, guid: 3991fcf7c60480442a205db98bee6bac,
         type: 3}
@@ -1079,7 +1079,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poltergeist
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1938714511188493521, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3991fcf7c60480442a205db98bee6bac, type: 3}
 --- !u!1001 &6869505715697081438
 PrefabInstance:

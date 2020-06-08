@@ -39,6 +39,8 @@ namespace TVRWMN
 		[SerializeField]
 		bool isConnecting;
 
+		public Text texto_ficha; // A modo de prueba para testear conexión al lobby
+
 		string gameVersion = "1";
 
 		private TypedLobby customLobby = new TypedLobby("TVRWMN", LobbyType.Default);
@@ -88,11 +90,21 @@ namespace TVRWMN
 			loaderAnime.SetActive(false);
 			salas.SetActive(true);
 			Debug.Log("Conectado al servidor... Intentamos conectar con una sala");
-			PhotonNetwork.JoinLobby();
-			
+			PhotonNetwork.JoinLobby(customLobby);
+
 		}
 
-		public void OnJoinedLobbyCallBack()
+        public override void OnRoomListUpdate(List<RoomInfo> roomList)
+        {
+            //base.OnRoomListUpdate(roomList);
+
+			foreach(RoomInfo info in roomList)
+            {
+				texto_ficha.text = info.Name;
+            }
+        }
+
+        public void OnJoinedLobbyCallBack()
 		{
 			LogFeedback("Elija un crimen para investigar...");
 			Debug.Log("Entrando en el lobby");
@@ -113,6 +125,7 @@ namespace TVRWMN
 			// 2
 			LogFeedback("Contacto establecido...");
 			loaderAnime.SetActive(false);
+			
 
 		}
 
@@ -169,12 +182,12 @@ namespace TVRWMN
 
 				PhotonNetwork.LocalPlayer.NickName = "Quest";
 				Debug.Log("PhotonNetwork.IsConnected! | Trying to Create/Join Room " + "666");
-				RoomOptions roomOptions = new RoomOptions();
-				roomOptions.MaxPlayers = 2;
+				RoomOptions roomOptions = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = 2 };
+				
 
 				TypedLobby typedLobby = new TypedLobby("TVRWMN", LobbyType.Default); //3
-				//PhotonNetwork.JoinOrCreateRoom("666", roomOptions, typedLobby); //4
-				PhotonNetwork.JoinRoom("666");
+																					 //PhotonNetwork.JoinOrCreateRoom("666", roomOptions, typedLobby); //4
+				PhotonNetwork.JoinRoom(texto_ficha.text);
 
 				
 			}
@@ -193,6 +206,8 @@ namespace TVRWMN
 
 			}
         }
+
+
 
 
     }

@@ -47,34 +47,6 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 0
     value: 0
---- !u!114 &-3114191594460673268
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
-  m_Name: Grain
-  m_EditorClassIdentifier: 
-  active: 0
-  enabled:
-    overrideState: 1
-    value: 1
-  colored:
-    overrideState: 1
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 0.177
-  size:
-    overrideState: 1
-    value: 1.55
-  lumContrib:
-    overrideState: 0
-    value: 0.8
 --- !u!114 &-3023189582279979272
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -173,7 +145,6 @@ MonoBehaviour:
   - {fileID: 4126925951144291710}
   - {fileID: -3023189582279979272}
   - {fileID: 1002942005273802653}
-  - {fileID: -3114191594460673268}
   - {fileID: -2694873767360982197}
   - {fileID: 6766729128911502626}
 --- !u!114 &1002942005273802653
@@ -265,13 +236,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb84e30e02715445aeb9959894e3b4d, type: 3}
   m_Name: ColorGrading
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   gradingMode:
     overrideState: 1
-    value: 1
+    value: 0
   externalLut:
     overrideState: 0
     value: {fileID: 0}
@@ -303,7 +274,7 @@ MonoBehaviour:
     defaultState: 4
   ldrLutContribution:
     overrideState: 0
-    value: 1
+    value: 0.978
   temperature:
     overrideState: 0
     value: 0
@@ -324,7 +295,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 4.36
+    value: 2.19
   contrast:
     overrideState: 0
     value: 0
@@ -356,14 +327,14 @@ MonoBehaviour:
     overrideState: 0
     value: 100
   lift:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 1, y: 1, z: 1, w: 0.048644897}
   gamma:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 1, y: 1, z: 1, w: 0.013898539}
   gain:
-    overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    overrideState: 1
+    value: {x: 1, y: 1, z: 1, w: -0.26407224}
   masterCurve:
     overrideState: 0
     value:

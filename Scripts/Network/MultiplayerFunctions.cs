@@ -16,11 +16,7 @@ public class MultiplayerFunctions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            Debug.Log("Mouse down");
-            ApagaLuz(2);
-        }
+       
     }
 
     [PunRPC]

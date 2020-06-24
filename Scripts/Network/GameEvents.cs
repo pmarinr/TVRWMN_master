@@ -62,6 +62,9 @@ public class GameEvents : MonoBehaviour
             case GEvent.Fantasma:
                 fantasma();
                 break;
+            case GEvent.Zombie:
+                zombie();
+                break;
             case GEvent.OuijaOn:
                 if (!Ouija.activa) {activeOuija(true); }
                     

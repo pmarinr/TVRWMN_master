@@ -103,7 +103,8 @@ public class GameEvents : MonoBehaviour
     {
         Debug.Log("Grab PunRPC", this);
         GameObject obj = GameObject.Find(name);
-        obj.transform.parent = GameController.Player;
+        obj.transform.parent = GameController.RightHand;
+        obj.transform.localPosition = Vector3.zero;
 
     }
 

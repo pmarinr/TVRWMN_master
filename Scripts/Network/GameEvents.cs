@@ -98,6 +98,23 @@ public class GameEvents : MonoBehaviour
         demonText(txt);
     }
 
+    [PunRPC]
+    private void Grab(string name)
+    {
+        Debug.Log("Grab PunRPC", this);
+        GameObject obj = GameObject.Find(name);
+        obj.transform.parent = GameController.Player;
+
+    }
+
+    [PunRPC]
+    private void UnGrab(string name)
+    {
+        Debug.Log("UnGrab PunRPC", this);
+        GameObject obj = GameObject.Find(name);
+        obj.transform.parent = null;
+    }
+
     #endregion 
     public void ApagarLuces()
     {
@@ -151,11 +168,25 @@ public class GameEvents : MonoBehaviour
     }
 
 
-    private void EnviarTextoRPC(string txt)
+    public void EnviarTextoRPC(string txt)
     {
         Debug.Log("Enviando texto");
         PhotonView photonView = PhotonView.Get(this);
         photonView.RPC("TextoDemoniaco", RpcTarget.All,txt);
+    }
+
+    public void GrabRPC(string name)
+    {
+        
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("Grab", RpcTarget.Others, name);
+    }
+
+    public void UnGrabRPC(string name)
+    {
+
+        PhotonView photonView = PhotonView.Get(this);
+        photonView.RPC("UnGrab", RpcTarget.Others, name);
     }
 
     public void EnviarTextoDemoniaco()

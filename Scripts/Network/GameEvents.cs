@@ -16,7 +16,8 @@ public class GameEvents : MonoBehaviour
         Cthulhu,
         OuijaOn,
         OuijaOff,
-        Fantasma
+        Fantasma,
+        Zombie
     }
 
     
@@ -34,6 +35,7 @@ public class GameEvents : MonoBehaviour
     public event System.Action bats;
     public event System.Action cthulhu;
     public event System.Action fantasma;
+    public event System.Action zombie;
     public event System.Action<string> onLightOn;
     public event System.Action<string> demonText;
     public event System.Action<Vector3> moveToOuija;
@@ -122,6 +124,11 @@ public class GameEvents : MonoBehaviour
     public void InvocarFantasma()
     {
         SendRPC(GEvent.Fantasma);
+    }
+
+    public void InvocarZombie()
+    {
+        SendRPC(GEvent.Zombie);
     }
 
     // Estos eventos se llamarán desde el evento OnClick desde un boton y no aceptan un enum como argumento. 
